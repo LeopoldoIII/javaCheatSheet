@@ -4,10 +4,9 @@ public class StringExamples {
 
     public static void main(String[] args) {
 
-        String word = "Hola mundo";
-        System.out.println(reverseWord(word));
-
+        System.out.println(reverseWord("Hola Mundo"));
         System.out.println(countLatters("HOLA", 'O'));
+        System.out.println(containsVowels("Hola"));
 
     }
 
@@ -25,7 +24,6 @@ public class StringExamples {
 
 
     public static int countLatters(String word, char letter) {
-
         int total = 0;
 
         for (int i = 0; i < word.length(); i++) {
@@ -36,5 +34,22 @@ public class StringExamples {
         return total;
     }
 
+    public static void swapNumbers() {
+        int a = 10;
+        int b = 20;
 
+        System.out.println("a is " + a + " and b is " + b);
+
+        a = a + b;
+        b = a - b;
+        a = a - b;
+
+        System.out.println("After swapping, a is " + a + " and b is " + b);
+    }
+
+    public static boolean containsVowels(String input) {
+
+        return input.toLowerCase().matches(".*[aeiou].*");
+
+    }
 }
