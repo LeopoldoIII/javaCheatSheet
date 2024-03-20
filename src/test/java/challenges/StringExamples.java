@@ -7,6 +7,7 @@ public class StringExamples {
         System.out.println(reverseWord("Hola Mundo"));
         System.out.println(countLatters("HOLA", 'O'));
         System.out.println(containsVowels("Hola"));
+        System.out.println(reversWordStringBuilder("Hola"));
 
     }
 
@@ -20,6 +21,16 @@ public class StringExamples {
         }
         return newWord;
 //        return newWord.toString();
+    }
+
+    public static String reversWordStringBuilder(String word) {
+
+        StringBuilder builder = new StringBuilder();
+        for (int i = word.length() - 1; i>=0; i--){
+            builder.append(word.charAt(i));
+        }
+
+        return builder.toString();
     }
 
 
@@ -48,8 +59,6 @@ public class StringExamples {
     }
 
     public static boolean containsVowels(String input) {
-
         return input.toLowerCase().matches(".*[aeiou].*");
-
     }
 }
