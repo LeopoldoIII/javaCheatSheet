@@ -13,7 +13,6 @@ public class StringExamples {
 
     public static String reverseWord(String word) {
         String newWord = "";
-//        StringBuilder newWord = new StringBuilder();
 
         for (int i = word.length() - 1; i >= 0; i--) {
             newWord += word.charAt(i);
@@ -25,12 +24,11 @@ public class StringExamples {
 
     public static String reversWordStringBuilder(String word) {
 
-        StringBuilder builder = new StringBuilder();
-        for (int i = word.length() - 1; i>=0; i--){
-            builder.append(word.charAt(i));
+        StringBuilder newWord = new StringBuilder();
+        for (int i = word.length() - 1; i >= 0; i--) {
+            newWord.append(word.charAt(i));
         }
-
-        return builder.toString();
+        return newWord.toString();
     }
 
 
