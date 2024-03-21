@@ -22,6 +22,15 @@ public class MapExamples {
     }
 
 
+    public static List<Integer> filterSquaredNumber(List<Integer> numbers) {
+
+        return numbers.stream()
+                .map(n -> n * n)
+                .toList();
+    }
+
+
+
     public static void numbersToSquare() {
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
 
