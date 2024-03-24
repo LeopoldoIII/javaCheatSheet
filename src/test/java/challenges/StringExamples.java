@@ -8,11 +8,11 @@ public class StringExamples {
         System.out.println(countLatters("HOLA", 'O'));
         System.out.println(containsVowels("Hola"));
         System.out.println(reversWordStringBuilder("Hola"));
-
     }
 
     public static String reverseWord(String word) {
         String newWord = "";
+        int[] tes = new int[10];
 
         for (int i = word.length() - 1; i >= 0; i--) {
             newWord += word.charAt(i);
@@ -20,6 +20,8 @@ public class StringExamples {
         }
         return newWord;
 //        return newWord.toString();
+
+
     }
 
     public static String reversWordStringBuilder(String word) {
