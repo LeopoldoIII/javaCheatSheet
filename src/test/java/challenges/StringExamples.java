@@ -1,5 +1,9 @@
 package challenges;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class StringExamples {
 
     public static void main(String[] args) {
@@ -8,6 +12,8 @@ public class StringExamples {
         System.out.println(countLatters("HOLA", 'O'));
         System.out.println(containsVowels("Hola"));
         System.out.println(reversWordStringBuilder("Hola"));
+        System.out.println(wordCounter("Hello word"));
+
     }
 
     public static String reverseWord(String word) {
@@ -60,5 +66,16 @@ public class StringExamples {
 
     public static boolean containsVowels(String input) {
         return input.toLowerCase().matches(".*[aeiou].*");
+    }
+
+    public static Map<String,Integer> wordCounter(String sentence){
+
+        Map<String, Integer> outPut = new HashMap<>();
+
+        List<String> wordList = List.of(sentence.split(" "));
+        for (String word : wordList) {
+            outPut.put(word, word.length());
+        }
+        return outPut;
     }
 }
