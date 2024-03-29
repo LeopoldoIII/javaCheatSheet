@@ -46,6 +46,11 @@ public class forExamples {
         System.out.println(sum);
     }
 
+    /*
+     *This program takes an integer as input (num) and calculates the sum of its individual digits.
+     * For example, if you call this method with the argument 123, it will return 1 + 2 + 3 = 6.
+     *
+     */
     public static Integer sumNumbers(int num) {
         int total = 0;
 
