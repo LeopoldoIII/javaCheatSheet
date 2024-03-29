@@ -13,12 +13,12 @@ public class StringExamples {
         System.out.println(containsVowels("Hola"));
         System.out.println(reversWordStringBuilder("Hola"));
         System.out.println(wordCounter("Hello word"));
+        System.out.println(isPrime(7));
 
     }
 
     public static String reverseWord(String word) {
         String newWord = "";
-        int[] tes = new int[10];
 
         for (int i = word.length() - 1; i >= 0; i--) {
             newWord += word.charAt(i);
@@ -68,7 +68,7 @@ public class StringExamples {
         return input.toLowerCase().matches(".*[aeiou].*");
     }
 
-    public static Map<String,Integer> wordCounter(String sentence){
+    public static Map<String, Integer> wordCounter(String sentence) {
 
         Map<String, Integer> outPut = new HashMap<>();
 
@@ -78,4 +78,23 @@ public class StringExamples {
         }
         return outPut;
     }
+
+    public static boolean isPrime(Integer number) {
+
+        boolean isPrime = true;
+
+        if (number <= 1) {
+            isPrime = false;
+        } else {
+            for (int i = 2; i <= Math.sqrt(number); i++) {
+                if (number % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+        }
+        return isPrime;
+    }
+
+
 }
