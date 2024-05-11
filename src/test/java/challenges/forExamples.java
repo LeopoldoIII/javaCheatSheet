@@ -15,7 +15,6 @@ public class forExamples {
     }
 
     public static Integer factorial(int num) {
-
        Integer total = 1;
 
        for(int i = 1; i <= num; i ++ ){

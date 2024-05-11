@@ -7,7 +7,6 @@ public class HashMapExample {
 
     public static void main(String[] args) {
         String word = "Holaa";
-
         System.out.println(counter(word));
     }
 

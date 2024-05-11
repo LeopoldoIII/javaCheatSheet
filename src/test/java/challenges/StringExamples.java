@@ -9,7 +9,7 @@ public class StringExamples {
     public static void main(String[] args) {
 
         System.out.println(reverseWord("Hola Mundo"));
-        System.out.println(countLatters("HOLA", 'O'));
+        System.out.println(countLetters("HOLA", 'O'));
         System.out.println(containsVowels("Hola"));
         System.out.println(reversWordStringBuilder("Hola"));
         System.out.println(wordCounter("Hello word"));
@@ -26,8 +26,6 @@ public class StringExamples {
         }
         return newWord;
 //        return newWord.toString();
-
-
     }
 
     public static String reversWordStringBuilder(String word) {
@@ -39,8 +37,7 @@ public class StringExamples {
         return newWord.toString();
     }
 
-
-    public static int countLatters(String word, char letter) {
+    public static int countLetters(String word, char letter) {
         int total = 0;
 
         for (int i = 0; i < word.length(); i++) {

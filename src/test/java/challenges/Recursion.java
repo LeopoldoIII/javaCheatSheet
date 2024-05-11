@@ -9,7 +9,6 @@ public class Recursion {
     }
 
     public static int sumNumbers(int number) {
-
         if (number == 1) {
             return 1;
         } else {
@@ -18,7 +17,6 @@ public class Recursion {
     }
 
     public static long factorial(int number) {
-
         if (number == 0) {
             return 1;
         } else {

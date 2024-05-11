@@ -13,9 +13,6 @@ public class ReduceExamples {
 
         List<String> word = Arrays.asList("Hola", " ", "mundo", "!");
         System.out.println(concatenate(word));
-
-
-
     }
 
 
@@ -30,6 +27,5 @@ public class ReduceExamples {
     public static String concatenate(List<String> word) {
         return word.stream().reduce("", (a,b) -> a +b);
     }
-
 
 }
